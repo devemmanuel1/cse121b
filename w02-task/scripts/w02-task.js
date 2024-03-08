@@ -22,7 +22,7 @@ imageElement.setAttribute("alt" , "profile image of ${fullname}");
 
 
 /* Step 5 - Array */
-const favoriteFoods = ["Yam" , "cake" , "Rice" , "Beans"];
+const favoriteFoods = ["Yam" , "Cake" , "Rice" , "Beans"];
 const newfavoritefood = ["Sharwama"];
 favoriteFoods.push(newfavoritefood);
 foodElement.innerHTML += `<br>${favoriteFoods}`;
