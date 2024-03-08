@@ -3,18 +3,19 @@
 /* Step 1 - Setup type tasks - no code required */
 
 /* Step 2 - Variables */
-let fullName = "Emmanuel Onyenatuluchi Ezezchukwu";
-let currentYear = 2024; 
-const profilePicture = "images/profile.jpg";
+const fullName = "Emmanuel Onyenatuluchi Ezechukwu";
+const currentYear = 2024; 
+console.log(`It is now ${currentYear}`);
+let profilePicture = "images/profile.jpg";
 
 /* Step 3 - Element Variables */
-const nameElement = document.getElementbyId("name");
+const nameElement = document.getElementById("name");
 const foodElement = document.getElementById("food");
 const yearElement = document.querySelector("#year");
-const imageElement = document.querySelector("image/profile.jpg");
+const imageElement = document.querySelector("img");
 
 /* Step 4 - Adding Content */
-nameElement.innerHTML = "<strong>${fullname}</strong>";
+nameElement.innerHTML = `<strong>${fullName}</strong>`;
 imageElement.setAttribute("src" , profilePicture);
 imageElement.setAttribute("alt" , "profile image of ${fullname}");
 
@@ -24,8 +25,8 @@ imageElement.setAttribute("alt" , "profile image of ${fullname}");
 const favoriteFoods = ["Yam" , "cake" , "Rice" , "Beans"];
 const newfavoritefood = ["Sharwama"];
 favoriteFoods.push(newfavoritefood);
-foodElement.innerHTML += "<br>${favoriteFoods}";
+foodElement.innerHTML += `<br>${favoriteFoods}`;
 favoriteFoods.shift();
-foodElement.innerHTML += "<br>${favoriteFoods}";
+foodElement.innerHTML += `<br>${favoriteFoods}`;
 favoriteFoods.pop();
-foodElement.innerHTML += "<br>${favoriteFoods}";
+foodElement.innerHTML += `<br>${favoriteFoods}`;
