@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/project.css" />
+
+</head>
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="w01-task.html">W1 Task</a></li>
+            <li><a href="w03-task.html">W3 Task</a></li>
+            <li><a href="w04-task.html">W4 Task</a></li>
+            <li><a href="w05-task.html">W5 Task</a></li>
+            <li><a href="project.html"class="active">Project</a></li>
+        </ul>
+    </nav>>
+
+<div class="app">
+    <h1 class="title">Weather Update</h1>
+    <div class="search">
+        <input type="text" placeholder="Enter City Name" spellcheck="false">
+        <button><img src="images/search.png" alt=""></button>
+    </div>
+    <div class="weather">
+        <img src="images/weather.png" class="weather-icon">
+        <h1 class="temp">24°C</h1>
+        <h2 class="City">Manila</h2>
+        <div class="Details">
+            <div class="Col">
+                <img src="images/humidity.png">
+                <div>
+                    <p class="humidity">72%</p>
+                    <p>Humidity</p>
+                </div> 
+            </div>       
+            <div class="col">
+                <img src="images/wind.png">
+                <div>
+                    <p class="wind">14 Kmh</p>
+                    <p>Wind Speed</p>
+                </div> 
+            </div> 
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    &copy;<span id="year"></span> | Week 05 - Project | CSE 121b
+</footer>
+
+<script src="scripts/main.js"></script>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+<script src="scripts/project.js"></script>
+
+
+</body>
+</html>
