@@ -20,6 +20,20 @@ async function checkWeather(city) {
     }
 }
 
+if (temp > 25) {
+    weatherInfo.innerHTML += '<p>It\'s hot out there! Stay hydrated.</p>';
+} else if (temp < 10) {
+    weatherInfo.innerHTML += '<p>It\'s chilly.</p>';
+}
+
+const weather =  [
+{ weather: '01d', },
+{ weather: '02d', },
+{ weather: '03d', }, 
+ ];
+const weatherUrl = `https://openweathermap.org/img/w/${weather}.png`;
+weatherInfo.innerHTML += `<img src="${weatherUrl}" alt="Weather icon">`;
+
 searchBtn.addEventListener("click", () => {
     checkWeather(searchBox.value);
 });
