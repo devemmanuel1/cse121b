@@ -31,6 +31,7 @@ const weather =  [
 { weather: '02d', },
 { weather: '03d', }, 
  ];
+ 
 const weatherUrl = `https://openweathermap.org/img/w/${weather}.png`;
 weatherInfo.innerHTML += `<img src="${weatherUrl}" alt="Weather icon">`;
 
